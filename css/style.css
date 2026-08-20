@@ -1,0 +1,673 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    color: #263238;
+
+    background: white;
+
+    line-height: 1.6;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 20px 7%;
+
+    background: white;
+
+    border-bottom: 1px solid #eee;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 100;
+
+}
+
+
+.logo {
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    color: #243b35;
+
+}
+
+
+.logo span {
+
+    color: #a87fba;
+
+}
+
+
+.navbar nav {
+
+    display: flex;
+
+    gap: 25px;
+
+}
+
+
+.navbar nav a {
+
+    color: #555;
+
+    font-size: 14px;
+
+}
+
+
+.navbar nav a:hover {
+
+    color: #a87fba;
+
+}
+
+
+.nav-buttons {
+
+    display: flex;
+
+    gap: 10px;
+
+}
+
+
+.login-btn {
+
+    padding: 9px 18px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 20px;
+
+    color: #333;
+
+}
+
+
+.signup-btn {
+
+    background: #243b35;
+
+    color: white;
+
+    padding: 9px 18px;
+
+    border-radius: 20px;
+
+}
+
+
+/* HERO */
+
+.hero {
+
+    min-height: 600px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 50px;
+
+    align-items: center;
+
+    padding: 70px 8%;
+
+    background: #f7f3f8;
+
+}
+
+
+.hero-content {
+
+    max-width: 600px;
+
+}
+
+
+.small-title {
+
+    color: #a87fba;
+
+    font-size: 13px;
+
+    letter-spacing: 2px;
+
+    font-weight: bold;
+
+}
+
+
+.hero h1 {
+
+    font-size: 60px;
+
+    line-height: 1.1;
+
+    margin: 20px 0;
+
+}
+
+
+.hero h1 span {
+
+    color: #a87fba;
+
+}
+
+
+.hero-content > p {
+
+    color: #666;
+
+    font-size: 18px;
+
+}
+
+
+.hero-buttons {
+
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 30px;
+
+}
+
+
+.primary-btn {
+
+    display: inline-block;
+
+    background: #243b35;
+
+    color: white;
+
+    padding: 13px 25px;
+
+    border-radius: 25px;
+
+    border: none;
+
+}
+
+
+.secondary-btn {
+
+    display: inline-block;
+
+    border: 1px solid #243b35;
+
+    color: #243b35;
+
+    padding: 13px 25px;
+
+    border-radius: 25px;
+
+}
+
+
+.hero-image img {
+
+    width: 100%;
+
+    height: 430px;
+
+    object-fit: cover;
+
+    border-radius: 25px;
+
+}
+
+
+/* SEARCH */
+
+.search-section {
+
+    width: 85%;
+
+    margin: -35px auto 0;
+
+    position: relative;
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 10px 35px rgba(0,0,0,.08);
+
+}
+
+
+.search-box {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 150px;
+
+    gap: 10px;
+
+    margin-top: 15px;
+
+}
+
+
+.search-box input,
+.search-box select,
+.search-box button {
+
+    padding: 14px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+}
+
+
+.search-box button {
+
+    background: #243b35;
+
+    color: white;
+
+    cursor: pointer;
+
+}
+
+
+/* SECTIONS */
+
+.section {
+
+    padding: 90px 8%;
+
+}
+
+
+.light-section {
+
+    background: #fafafa;
+
+}
+
+
+.section-title {
+
+    max-width: 650px;
+
+    margin-bottom: 40px;
+
+}
+
+
+.section-title p {
+
+    color: #a87fba;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+}
+
+
+.section-title h2 {
+
+    font-size: 38px;
+
+    line-height: 1.2;
+
+    margin-top: 10px;
+
+}
+
+
+/* FEATURES */
+
+.feature-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4,1fr);
+
+    gap: 20px;
+
+}
+
+
+.feature-card {
+
+    padding: 30px;
+
+    background: white;
+
+    border: 1px solid #eee;
+
+    border-radius: 15px;
+
+}
+
+
+.feature-icon {
+
+    width: 45px;
+
+    height: 45px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: #eee5f2;
+
+    color: #8b62a0;
+
+    border-radius: 10px;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* CARDS */
+
+.country-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4,1fr);
+
+    gap: 20px;
+
+}
+
+
+.country-card {
+
+    background: white;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,.06);
+
+}
+
+
+.country-card img {
+
+    width: 100%;
+
+    height: 220px;
+
+    object-fit: cover;
+
+}
+
+
+.country-card div {
+
+    padding: 20px;
+
+}
+
+
+.country-card p {
+
+    color: #777;
+
+    font-size: 14px;
+
+    margin: 5px 0 15px;
+
+}
+
+
+.country-card a {
+
+    color: #8b62a0;
+
+    font-weight: bold;
+
+}
+
+
+/* FORMS */
+
+.form-page {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: #f7f3f8;
+
+}
+
+
+.form-box {
+
+    width: 420px;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 40px rgba(0,0,0,.08);
+
+}
+
+
+.form-box h1 {
+
+    margin: 25px 0 10px;
+
+}
+
+
+.form-box p {
+
+    color: #777;
+
+}
+
+
+.form-box label {
+
+    display: block;
+
+    margin-top: 15px;
+
+    margin-bottom: 5px;
+
+    font-weight: bold;
+
+}
+
+
+.form-box input,
+.form-box select,
+.form-box textarea {
+
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+}
+
+
+.form-box button {
+
+    width: 100%;
+
+    margin-top: 20px;
+
+    cursor: pointer;
+
+}
+
+
+/* FOOTER */
+
+footer {
+
+    background: #243b35;
+
+    color: white;
+
+    padding: 50px 8%;
+
+    text-align: center;
+
+}
+
+
+footer p {
+
+    margin-top: 10px;
+
+    color: #ccd5d2;
+
+}
+
+
+/* TABLE */
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 30px;
+
+}
+
+
+th,
+td {
+
+    padding: 15px;
+
+    border: 1px solid #ddd;
+
+    text-align: left;
+
+}
+
+
+th {
+
+    background: #243b35;
+
+    color: white;
+
+}
+
+
+/* MOBILE */
+
+@media(max-width:900px) {
+
+    .navbar nav {
+
+        display: none;
+
+    }
+
+    .hero {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .feature-grid,
+    .country-grid {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+}
+
+
+@media(max-width:600px) {
+
+    .nav-buttons {
+
+        display: none;
+
+    }
+
+    .hero {
+
+        padding: 50px 5%;
+
+    }
+
+    .hero h1 {
+
+        font-size: 40px;
+
+    }
+
+    .search-box {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .feature-grid,
+    .country-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
