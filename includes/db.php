@@ -5,17 +5,9 @@ $username = "root";
 $password = "";
 $database = "globalnest";
 
-$conn = mysqli_connect(
-    $host,
-    $username,
-    $password,
-    $database
-);
+$conn = mysqli_connect( $host,$username, $password,$database);
 
 if (!$conn) {
-
     die("Database connection failed: " . mysqli_connect_error());
-
 }
-
 ?>
